@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neptune Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-back">
+    <div class="flex h-screen bg-back">
+      <!-- aside -->
+      <aside class="flex flex-col justify-between bg-white w-1/5 p-6 shadow-md">
+        <div class="upper flex flex-col gap-8 p-1">
+          <img class="w-1/2" src="/assets/logo.jpeg" alt="" />
+          <div
+            class="user flex w-2xs border-1 border-light-gray p-2 rounded-2xl justify-around"
+          >
+            <div class="flex justify-around gap-2">
+              <img class="w-11 h-11" src="/assets/profilelogo.jpg" alt="" />
+              <p class="font-spline">
+                Jessica Thompson<br /><span class="text-gray"
+                  >Primary User</span
+                >
+              </p>
+            </div>
+            <img src="/assets/downarrow.svg" alt="" />
+          </div>
+          <nav class="flex flex-col gap-2 font-spline text-gray-400">
+            <a href="#" class="flex p-2.5 gap-5">
+              <img src="/assets/home 1.svg" alt="home" />
+              <p>Home</p>
+            </a>
+            <a
+              href="#"
+              class="flex p-2.5 gap-5 bg-lightgreen rounded-md text-blax"
+            >
+              <img src="/assets/document-icon.png" alt="doc-icon" />
+              <p>Documents</p>
+            </a>
+            <a href="#" class="flex p-2.5 gap-5">
+              <img src="/assets/message-circle.png" alt="Chat" />
+              <p>Chat with Neptune</p>
+            </a>
+            <a href="#" class="flex p-2.5 gap-5">
+              <img src="/assets/help-circle.png" alt="Help" />
+              <p>Help</p>
+            </a>
+            <a href="#" class="flex p-2.5 gap-5">
+              <img src="/assets/settings-icon.png" alt="Settings" />
+              <p>Settings</p>
+            </a>
+          </nav>
+        </div>
+
+        <div class="lower font-spline gap-4">
+          <img class="p-2" src="/assets/phone-icon.png" alt="" />
+          <h2 class="text-2xl p-2">Having Trouble?</h2>
+          <p class="text-gray p-2">
+            Feel free to contact us and we will always help you through the
+            process.
+          </p>
+          <button class="p-3 bg-dark-blue rounded-5 font-normal text-white">
+            Contact Us
+          </button>
+        </div>
+      </aside>
+      <div class="content p-12 flex flex-col gap-10 w-screen">
+        <div class="path flex gap-2 font-spline font-normal">
+          <p class="text-primary">Home</p>
+          <img src="/assets/right-arrow.png" alt="" />
+          <p class="text-gray">Documents</p>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex gap-4">
+            <p class="text-4xl font-zin">My Documents</p>
+            <!-- <button class="bg-primary rounded-2xl p-2 text-white font-medium">
+              Add Document
+            </button> -->
+          </div>
+
+          <input
+            type="text"
+            class="bg-white text-gray font-normal border-light-gray border-1 rounded-[4px] p-2"
+            placeholder="Search Documents..."
+          />
+        </div>
+        <div class="table-container">
+          <table class="w-full font-spline bg-white rounded-8 shadow-md">
+            <thead class="text-center font-semibold text-base pt-4">
+              <tr class="border-b-1 border-offwhite">
+                <th class="p-2 pl-8"><input type="checkbox" /></th>
+                <th class="p-2 pl-10 text-left">Document Name</th>
+                <th class="p-2">Status</th>
+                <th class="p-2 text-left pl-8">Last Modified</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr
+                class="cursor-pointer duration-300 border-b-1 border-offwhite"
+              >
+                <td class="pl-8"><input type="checkbox" /></td>
+                <td class="p-2 text-left font-semibold text-primary w-1/2 pl-10">
+                  Title of the Document Goes Here
+                </td>
+                <td class="p-2">
+                  <button
+                    class="bg-primary p-1 px-4 font-normal text-white rounded-2xl"
+                  >
+                    Needs Signing
+                  </button>
+                </td>
+                <td class="p-2">
+                  <div class="flex justify-between align-center py-3 px-6">
+                    <p class="text-gray">10/22/2024<br />2:01 pm</p>
+                    <div class="flex justify-between">
+                      <button
+                        class="border-light-gray border-2 p-2 w-134 text-center text-gray font-normal rounded-8"
+                      >
+                        Sign now
+                      </button>
+                      <img
+                        class="py-3 px-6"
+                        src="/assets/threedot.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="cursor-pointer duration-300 border-b-1 border-offwhite"
+              >
+               <td class="pl-8"><input type="checkbox" /></td>
+                <td class="p-2 text-left font-semibold text-primary w-1/2 pl-10">
+                  Title of the Document Goes Here
+                </td>
+                <td class="p-2">
+                  <button
+                    class="bg-light-gray p-1 px-4 text-gray font-normal rounded-2xl"
+                  >
+                    Pending
+                  </button>
+                  <p class="text-light-gray font-inter italic font-medium">
+                    Waiting for <span class="text-primary">1 person</span>
+                  </p>
+                </td>
+                <td class="p-2">
+                  <div class="flex justify-between align-center py-3 px-6">
+                    <p class="text-gray">10/22/2024<br />2:01 pm</p>
+                    <div class="flex justify-between">
+                      <button
+                        class="border-light-gray border-2 p-2 w-134 text-center text-gray font-normal rounded-8"
+                      >
+                        Preview PDF
+                      </button>
+                      <img
+                        class="py-3 px-6"
+                        src="/assets/threedot.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="cursor-pointer duration-300 border-b-1 border-offwhite"
+              >
+               <td class="pl-8"><input type="checkbox" /></td>
+                <td class="p-2 text-left font-semibold text-primary w-1/2 pl-10">
+                  Title of the Document Goes Here
+                </td>
+                <td class="p-2">
+                  <button
+                    class="bg-light-gray p-1 px-4 text-gray font-normal rounded-2xl"
+                  >
+                    Pending
+                  </button>
+                  <p class="text-light-gray font-inter italic font-medium">
+                    Waiting for <span class="text-primary">2 people</span>
+                  </p>
+                </td>
+                <td class="p-2">
+                  <div class="flex justify-between align-center py-3 px-6">
+                    <p class="text-gray">10/22/2024<br />2:01 pm</p>
+                    <div class="flex justify-between">
+                      <button
+                        class="border-light-gray border-2 p-2 w-134 text-center text-gray font-normal rounded-8"
+                      >
+                        Preview PDF
+                      </button>
+                      <img
+                        class="py-3 px-6"
+                        src="/assets/threedot.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="cursor-pointer duration-300 border-b-1 border-offwhite"
+              >
+               <td class="pl-8"><input type="checkbox" /></td>
+                <td class="p-2 text-left font-semibold text-primary w-1/2 pl-10">
+                  Title of the Document Goes Here
+                </td>
+                <td class="p-2">
+                  <button
+                    class="bg-lightgreen p-1 px-4 font-normal text-dark-blue rounded-2xl"
+                  >
+                    Completed
+                  </button>
+                </td>
+                <td class="p-2">
+                  <div class="flex justify-between align-center py-3 px-6">
+                    <p class="text-gray">10/22/2024<br />2:01 pm</p>
+                    <div class="flex justify-between">
+                      <button
+                        class="border-light-gray border-2 p-2 w-134 text-center text-gray font-normal rounded-8"
+                      >
+                        Download PDF
+                      </button>
+                      <img
+                        class="py-3 px-6"
+                        src="/assets/threedot.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="cursor-pointer duration-300 border-b-1 border-offwhite"
+              >
+               <td class="pl-8"><input type="checkbox" /></td>
+                <td class="p-2 text-left font-semibold text-primary w-1/2 pl-10">
+                  Title of the Document Goes Here
+                </td>
+                <td class="p-2">
+                  <button
+                    class="bg-lightgreen p-1 px-4 font-normal text-dark-blue rounded-2xl"
+                  >
+                    Completed
+                  </button>
+                </td>
+                <td class="p-2">
+                  <div class="flex justify-between align-center py-3 px-6">
+                    <p class="text-gray">10/22/2024<br />2:01 pm</p>
+                    <div class="flex justify-between">
+                      <button
+                        class="border-light-gray border-2 p-2 w-134 text-center text-gray font-normal rounded-8"
+                      >
+                        Download PDF
+                      </button>
+                      <img
+                        class="py-3 px-6"
+                        src="/assets/threedot.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="cursor-pointer duration-300 border-b-1 border-offwhite"
+              >
+               <td class="pl-8"><input type="checkbox" /></td>
+                <td class="p-2 text-left font-semibold text-primary w-1/2 pl-10">
+                  Title of the Document Goes Here
+                </td>
+                <td class="p-2">
+                  <button
+                    class="bg-lightgreen p-1 px-4 font-normal text-dark-blue rounded-2xl"
+                  >
+                    Completed
+                  </button>
+                </td>
+                <td class="p-2">
+                  <div class="flex justify-between align-center py-3 px-6 w-full">
+                    <p class="text-gray">10/22/2024<br />2:01 pm</p>
+                    <div class="flex justify-between">
+                      <button
+                        class="border-light-gray border-2 p-2 w-134 text-center text-gray font-normal rounded-8"
+                      >
+                        Download PDF
+                      </button>
+                      <img
+                        class="py-3 px-6"
+                        src="/assets/threedot.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
